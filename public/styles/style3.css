@@ -1,0 +1,48 @@
+h1, h3
+{
+    text-align:left;
+}
+h3
+{
+    background-color:red;
+    color:black;
+    font-size:30px;
+    margin-bottom:0px;  
+    margin-top:0px;
+ 
+}
+.news p
+{
+    background-color:lightgray;
+    margin-top:0px;
+    font-size:60px;   
+    margin-bottom:0px;
+      
+}
+.news
+{
+    width:50%;
+    margin-bottom:0px; 
+    margin-top:0px; 
+  
+  
+}
+
+a
+{
+    text-decoration: none;
+    color: blue;
+    margin-bottom:0px; 
+    margin-top:0px;
+}
+
+Button {
+
+    margin-left: 20px; 
+    font-size:18px;
+    color: black;
+    background-color: rgb(12, 246, 90);
+    margin-bottom:0px; 
+}
+
+

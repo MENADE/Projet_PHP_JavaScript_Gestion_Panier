@@ -1,0 +1,318 @@
+html {
+	font-size: 100%; /* Voir -> Note 1 à la fin de la feuille de styles. */
+
+}
+body {
+	margin: 0px;
+	padding: 0; /* -> 2 */
+	font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif; /* 3 */
+	font-size: .8em; /* -> 4 */
+	line-height: 1; /* -> 5 */
+	color: rgb(57, 0, 190);
+ 
+  background: rgb(179, 235, 133);
+ 
+}
+
+/* --- POSITIONNEMENT --- */
+
+
+/* En-tête */
+#entete {
+    padding: 1px;
+        background: chartreuse;      
+        height:  80px;
+        margin: 0px;
+       
+}
+
+#entete h2 img {
+    padding: 0px; /* -> 2 */
+	float: left;
+	margin: 0px 20px 0px 2px;
+}
+
+#entete h1  {
+
+	margin: 30px 20px 0px 300px;
+}
+
+
+/* Navigation */
+#navigation {
+    background: #81fda0;
+   
+    margin: 0px 0px 1px 0px ;
+ color:red;
+ font-size: 20px;
+}
+
+/* #navigation a:hover, #navigation a:focus {
+	background: #25f352;
+} */
+
+/* Listes */
+
+ul {
+    list-style: square;	
+    padding:1px; /* -> 9 */
+}
+
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* --- Cotenu --- */
+
+.contenu
+{
+    background-color:lightgray;
+    margin-top:0px;
+    font-size:25px;   
+    margin-bottom:0px;
+    height: 190px;
+   
+      
+}
+
+
+table {
+    margin:auto;
+    border-collapse:collapse;    
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+    color:rgb(5, 3, 3);
+    background-color:white;
+    
+}
+
+td{
+   
+    border: 1px solid;
+    border-bottom-color:lightgrey;   
+}
+
+#colorligne{
+border-bottom-color:lightgrey;
+color: red;
+
+}
+
+.colortitreproduit {
+    background-color:rgb(31, 204, 204);
+ font-size: 16px;
+ color: black;
+ font-weight: blod;
+
+}
+
+.color_contenu_description {
+ background-color: lightgrey;
+
+}
+
+
+/* Pied de page */
+#pied {
+	padding: 15px 20px;
+    font-size: .85em;
+    color: #E6A948;
+    background-color: chartreuse;
+    height: 70px;
+
+
+}
+#pied p {
+	margin: .5em 0;
+}
+#pied #copyright {
+	float: right;
+	margin: .5em 0 30px 10%;
+	font-size: 1em;
+}
+
+
+
+/* --- STYLES POUR CERTAINS CONTENUS DES GABARITS --- */
+
+pre, code {
+	font-size: 100%;
+	font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New", monospace;
+}
+pre {
+	width: 90%;
+	overflow: auto;
+	overflow-y: hidden;
+	margin: .75em 0;
+	padding: 12px;
+	background: #eee;
+	color: #555;
+}
+pre strong {
+	font-weight: normal;
+	color: black;
+}
+
+#copyright {
+	margin: 20px 0 5px 0;
+	text-align: right;
+	font-size: .8em;
+	color: #848F63;
+}
+#copyright a {
+	color: #848F63;
+	text-decoration: none;
+}
+#copyright a:hover, #copyright a:focus {
+	text-decoration: underline;
+}
+
+/* 
+changement de theme */
+
+.themePale #navigation{
+    background-color: lightblue;
+    color:rgb(0, 43, 236);
+  }
+  .themePale #entete{
+    background-color: rgb(61, 151, 202);
+    color:black;
+  }
+  .themePale #contenu{
+    background-color: rgb(104, 231, 243);
+    color:lightgoldenrodyellow;
+  }
+
+  .themePale table{
+    background-color:white;
+    color:rgb(100, 3, 211);
+  }
+
+  .themePale color_contenu_description{
+    background-color: rgb(247, 243, 56);
+    color:black;
+  }
+
+
+  .themePale #pied{
+    background-color: rgb(61, 151, 202);
+    color:red;
+  }
+
+
+ /*  // button  */
+
+  Button {
+background-color: rgb(174, 148, 248);
+font-size: 20px;
+height: 50px;
+font-weight: bold;
+border: white;
+margin: 3px 60px;
+color: white;
+
+
+  }
+
+  /*  alignement dans table panier*/
+
+  #alignemnet {
+
+    text-align: right;
+
+  }
+
+  #buttonModisup {
+border: white;
+
+color: rgb(141, 27, 27);
+background: #0cca3b;
+
+width: 130px;
+height: 27px;
+
+font-size: 15px;
+  }
+
+  .buttonsup {
+    border: white;    
+    color: white;
+    background: #c06dc0;    
+    width: 140px;
+    height: 27px;    
+    font-size: 15px;
+    margin-right:80px ;
+
+
+      }
+
+      #aligntotaux {
+
+        margin-left: 1450px;
+        color:red;
+      
+
+      }
+
+      .eleminorder{
+
+        border-left-color: lightgrey;
+      }
+
+ 
+ /*  
+  animation  du curseur */
+      .cursor {
+        width: 70px;
+        height: 70px;
+        border: 2px dashed red;
+        border-radius: 50%;
+        position: absolute;
+        animation: Anim1 1s infinite alternate;
+      pointer-events: none;
+     
+    }
+
+      .cursor::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+    }
+    
+    .expand {
+        animation: Anim2 .4s;
+        background: crimson;
+        border: 1px solid crimson;
+    }
+
+    @keyframes Anim1 {
+      from {
+          transform: scale(1) rotate(0deg);
+      }
+      to {
+          transform: scale(0.7) rotate(190deg);
+      }
+  }
+  
+  @keyframes Anim2 {
+      0%{
+          transform: scale(1);
+      }
+      50%{
+          transform: scale(2);
+      }
+      100%{
+          transform: scale(1);
+          opacity:0;
+      }
+  }
